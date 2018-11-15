@@ -28,8 +28,11 @@ export class ShowPersonElement extends HTMLElement {
   }
 
   render() {
+    const loading = this.person.id ? '' : /*html*/ `<div>loading data...</div>`;
+
     this.shadowRoot.innerHTML = /*html*/ `
-    <h1>Showing Person</h1>
+    <h1><slot name="title">Showing Person</slot></h1>
+    ${loading}
     <ul>
       <li>Name: ${this.person.name}</li>
       <li>EMail: ${this.person.email}</li>
@@ -43,8 +46,11 @@ export class ShowPersonElement extends HTMLElement {
     const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
     if (response.ok) {
       const person = await response.json();
-      this.person = person;
-      this.render();
+      // to show the loading state, API is too fast
+      setTimeout(() => {
+        this.person = person;
+        this.render();
+      }, 1000);
     }
   }
 }

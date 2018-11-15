@@ -9,6 +9,7 @@ export class HelloWorldShadowElement extends HTMLElement {
       <style>
         p {
           font-size: 1.5em;
+          color: blue;
         }
       </style>
 

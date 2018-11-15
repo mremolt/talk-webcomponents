@@ -14,7 +14,23 @@
     <my-hello-person></my-hello-person>
     <my-hello-person first-name="Arthur"></my-hello-person>
 
-    <my-show-person person-id="3"></my-show-person>
+    <my-slot-demo></my-slot-demo>
+    <my-slot-demo>
+      <ul slot="user-content">
+        <li>This is</li>
+        <li>the custom content</li>
+        <li>inside the element tag.</li>
+      </ul>
+    </my-slot-demo>
+
+    <my-show-person person-id="3"><span slot="title">Show me the data</span></my-show-person>
+
+    <div>
+      <h1>Extending built in elements, like a button</h1>
+      <button is="my-fancy-button">Click me!</button>
+    </div>
+
+    <h1>That's all for now!</h1>
 
     <script type="module" src="./main.js"></script>
   </body>

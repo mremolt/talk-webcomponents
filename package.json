@@ -6,7 +6,8 @@
   "scripts": {
     "start": "browser-sync start --server --directory --files src/**/* --serveStatic src",
     "serve": "ws --port 8080  --compress --directory src",
-    "talk": "browser-sync start --server --directory --files folien/**/* --serveStatic folien"
+    "talk:dev": "browser-sync start --server --directory --files folien/**/* --serveStatic folien",
+    "talk": "ws --port 8081  --compress --directory folien"
   },
   "keywords": [],
   "author": "",
