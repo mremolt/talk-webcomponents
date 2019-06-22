@@ -1,8 +1,9 @@
 class FancyButton extends HTMLButtonElement {
-  constructor() {
-    super();
+  connectedCallback() {
     this.addEventListener('mousedown', () => this.drawPressed());
     this.addEventListener('mouseup', () => this.drawUp());
+
+    this.style.backgroundColor = 'inherit';
   }
 
   drawPressed() {

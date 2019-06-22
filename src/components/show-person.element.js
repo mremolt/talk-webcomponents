@@ -6,6 +6,7 @@ export class ShowPersonElement extends HTMLElement {
 
   constructor() {
     super();
+
     this.attachShadow({ mode: 'open' });
     this.person = {
       id: null,
@@ -46,6 +47,7 @@ export class ShowPersonElement extends HTMLElement {
     const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
     if (response.ok) {
       const person = await response.json();
+
       // to show the loading state, API is too fast
       setTimeout(() => {
         this.person = person;
