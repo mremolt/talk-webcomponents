@@ -1,6 +1,6 @@
 ## Einsatzgebiete
 
-Aktuell gibt es zwei primäre Einsetzgebiete, in denen Web Components eingesetzt werden können:
+Aktuell gibt es zwei primäre Bereiche, in denen Web Components eingesetzt werden können:
 
-- Klassische App Entwicklung
-- Bibliotheken wiederverwendbarer UI Komponenten
+- Klassische App-Entwicklung
+- Bibliotheken wiederverwendbarer UI-Komponenten

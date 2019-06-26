@@ -1,4 +1,4 @@
-## Klassische App Entwicklung
+## Klassische App-Entwicklung
 
 Als Alternative zu den großen Frameworks (Angular etc.) kann man mit Web Components auch vollständige Web-Applikationen entwickeln, inklusive Routing, API-Zugriffen ...
 
